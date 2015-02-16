@@ -6,6 +6,12 @@ do
 	jhead -n%Y-%m-%d-%f $pics
 done
 
+# remove first 9 letters of each file name
+for pics in *.jpg
+do
+	mv $pics ${pics:9}
+done
+
 # rename according to file names
 for folders in 2014-08* 2014-09* 2014-10* 2014-11*
 do
