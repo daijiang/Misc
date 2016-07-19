@@ -32,3 +32,4 @@ done
 # rename files from .CR2.jpg to .jpg
 rename 's/.CR2.jpg$/.jpg/' *.CR2.jpg
 
+exiftool -d %Y-%m-%d\ %H.%M.%S.%%e "-filename<CreateDate" .  # rename MOV files...
