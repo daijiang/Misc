@@ -6,6 +6,11 @@ do
 	jhead -n%Y-%m-%d-%f $pics
 done
 
+for pics in *.jpg 
+do
+	jhead -n%Y-%m-%d-%f $pics
+done
+
 # remove first 9 letters of each file name
 for pics in *.jpg
 do
